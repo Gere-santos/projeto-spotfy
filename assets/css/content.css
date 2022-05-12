@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+#body{
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    overflow-x: hidden;
+
+}
+
+
+.grid {
+    display: grid;
+    grid-template-rows: auto auto 50px;
+    grid-template-columns: 200px 1fr 200px ;
+    grid-template-areas: 
+    'nav header header'
+        'nav main main'
+        'footer footer footer';
+}
+
+.main {
+    grid-area: nav;
+    background: #000000;
+    height: 85vh;
+    width: 17.5%;
+    position: fixed;
+}
+
+.grid div:nth-child(3) {
+    grid-area: main;
+    background:  #1F1F1F;
+    height: 85vh;
+    width: 82%;
+    
+   
+}
+
+.content-1{
+    background: #4C3693;
+    height: 54vh;
+    width: 82vw;
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+    padding-top: 55px;
+    margin-left: 35px; 
+}
+
+.lista-h1{
+    padding-top: 12%;
+    padding-left: 25px;
+}
+.content-2{
+    background: #20173D;
+    background: linear-gradient(180deg, #20173D  5.62%,  #141319 20.61%);
+    height: 200vh;
+    width: 82vw;
+    margin-left: 35px;
+    
+}
+
+
+.quadrado{
+    background: #000000;
+    height: 225px;
+    width: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(320deg, #7A8F89  25.90%,  #4114B8 100.90%);
+
+}
+
+.coracao{
+    height: 85px;
+    width: 85px;
+
+}
+.titulo-inicio{
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+    color: white;
+}
+.lista-h1 p{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.usuario-musicas{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.play-list{
+    height: 60px;
+    width: 60px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.artista-lista{
+    margin-bottom: 2px;
+    font-size: 17px;
+}
+.nome-artista-lista{
+    font-size: 14px;
+}
+
+#tableList {
+    width: 70vw;
+    margin: 15px 40px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #B3B3B3;
+    border-bottom: #282828 solid 1px;
+}
+
+#tableList2{
+    width: 70vw;
+    margin: 15px 40px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #B3B3B3;
+}
+
+.th1{
+   
+    height: 10px;
+    padding-right: 1%;
+    width: 5px;
+   
+}
+.th2{
+    height: 10px;
+    padding-right: 22%;
+    width: 23vw;
+}
+.th3{
+    height: 10px;
+    padding-left: 11%;
+}
+
+
+.th4{
+    height: 10px;
+    padding-left: 15%;
+}
+.th5{
+    padding-left: 3%;
+    height: 10px;
+}
+.img-icon{
+    width: 45px;
+    height: 45px;
+    margin: 0 15px;
+}
+.img-flex{
+    display: flex;
+    justify-content: flex-start;
+   
+    
+}
+.img-flex p:nth-child(2){
+   color: wheat;
+   margin-top: 5px;
+   font-size: 14px;
+  
+}
+.descrica-artista-list{
+    display: flex;
+    flex-direction: column;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0 15px;
+   
+  }
+
+
+  .td3{
+      padding-left: 2%;
+      width: 320px;
+  }
+  .td4{
+    width: 190px
+  }
+  

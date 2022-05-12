@@ -1,0 +1,124 @@
+.container-player {
+    grid-area: footer;
+    background: #181818;
+    width: 100vw;
+    position: fixed;
+    height: 16vh;
+    margin-top: 85vh;
+    border-top: solid 1px #282828;
+   padding-right: 30px;
+    
+   
+}
+.zevaqueiro{
+    width: 50px;
+    height: 50px;
+    margin-right: 13px;
+}
+.container-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    margin-left: 17%;
+    margin-top: -2%;
+    
+    
+}
+.display-central{
+    margin: 0 28%;
+    position:fixed;
+    
+}
+
+.play {
+    margin: 0 8px;
+    border-radius: 50%;
+    width: 30px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin-bottom: 10px;
+    
+}
+#range-player{
+    width: 500px;
+    font-weight: 100;
+    margin: 0 15px;
+}
+
+.icone-inferior-esquerdo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+  
+    
+}
+.icone-volume{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.volume{
+    margin-right: 10px;
+}
+p{
+    color: #B3B3B3;
+}
+.nomeMusica{
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+.descricaoArtista{
+    font-size: 18px;
+    padding-bottom:5px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.descicao-artista{
+    display: flex;
+    flex-direction: column;
+}
+.player-central{
+    display: flex;
+    margin-top: 1%;
+    position: fixed;
+   
+}
+.prev-btn, .next-btn{
+    background: #181818;
+    outline: none;
+     border: none;
+     margin: 0 10px;
+     margin-bottom: 7px;
+    
+}
+.previous, .next{
+    height: 22px;
+    width: 22px;
+    
+}
+#range-player[type=range] {
+    -webkit-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 500px;
+    height: 0.2em;
+    margin-top: 7px;
+    left: 1em;
+    border-radius: 5px;
+    background-color: white;
+    outline: none;
+}
+#range-player:hover{
+    background: rgb(79, 202, 79);
+}

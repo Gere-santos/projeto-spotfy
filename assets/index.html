@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="./css/lateral.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/content.css">
+</head>
+
+<body id="body">
+    <div class="grid">
+        <header></header>
+        <main class="main">
+            <img src="./icons/spotify_logo_icon_168793.svg" alt="" class="logo-spotify">
+            <div class="content-lado-esquerdo">
+                <p class="menu-esquerdo"><i class="fa-solid fa-house"></i> Início</p>
+                <p class="menu-esquerdo"><i class="fa-solid fa-magnifying-glass"></i> Procurar</p>
+                <p class="menu-esquerdo"><i class="fa-thin fa-list-music"></i> A tua Biblioteca</p>
+                <p class="menu-esquerdo">Criar sua lista de reprodução</p>
+                <p class="menu-esquerdo">Musicas de que gostei</p>
+                <p class="menu-esquerdo">Os teus episódios</p>
+            </div>
+        </main>
+        <div>
+            <div class="content-1">
+                <div class="quadrado"><img src="./icons/ukraini_slava_flag_ukraine_colors_icon_219119.png" alt=""
+                        class="coracao"></div>
+                <div class="lista-h1">
+                    <p>Lista de Reprodução</p>
+                    <h1 class="titulo-inicio">Músicas que você gosta</h1>
+                   
+                </div>
+            </div>
+            <div class="content-2">
+                <div class="list-music-container-2">
+                    <img src="./icons/play_multimedia_icon_153664.svg" alt="" class="play-list">
+                    <table class="records" id="tableList">
+                        <thead >
+                            <tr>
+                                <th class="th1">#</th>
+                                <th class="th2">TÍTULO</th>
+                                <th class="th3">ÁLBUM</th>
+                                <th class="th4">DATA ADICIONADA</th>
+                                <th class="th5"><img src="./icons/4105961-clock-duration-hour-minutes-seconds-time_113914.svg" alt=""></th>
+                            </tr>
+                        </thead>
+                       
+                    </table>
+                    <table  id="tableList2">
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+        <div class="container-player">
+            <div class="icone-inferior-esquerdo"> <img src="" alt="" class="zevaqueiro" id="fotoArtista">
+                <div class="descicao-artista">
+                    <p class="descricaoArtista">Volta comigo BB Zé vaqueiro</p>
+                    <p class="nomeMusica"></p>
+                </div>
+            </div>
+            <div class="display-central">
+                <div class="button-container">
+
+                    <button class="prev-btn">
+                        <img src="./icons/previous-track_icon-icons.com_69976.png" alt="" class="previous">
+                    </button>
+                    <button class="play">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+
+                    <button class="next-btn">
+                      <img src="./icons/skip-track-1_icon-icons.com_69905.ico" alt="" class="next">
+                    </button>
+                   <a href="" id="retornar"> <img src="./icons/ic_replay_128_28743.png" alt=""></a>
+                </div>
+               <div class="player-central">
+                <p class="atualiza-barra">00:00</p> <input type="range" value="1" id="range-player"><p class="tempo-musica"></p>
+            </div>         
+            </div>
+            <p class="icone-volume"> <img src="./icons/volume-3_90919.svg" alt="" class="volume"><input type="range"
+                    id="inputVolume" min="0" value="0.5" max="1" step="0.01"> </p>
+        </div>
+    </div>
+    <audio src="./music/closer.m4a" class="tagAudio"></audio>
+    <script src="./index.js"></script>
+    <script src="https://kit.fontawesome.com/8dd4ce5566.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
