@@ -204,7 +204,14 @@ tagAudio.currentTime = 0
 tagAudio.play()
 }
 
+const removeMenu = () => {
+    let menu = document.querySelector('.menu-superior')
+    menu.classList.add('invisible')
+    console.log(scroll)
+}
 
+
+window.addEventListener('scroll', removeMenu)
 tagAudio.addEventListener('timeupdate', atualizaBarra)
 retornar.addEventListener('click', retornarMusica)
 

@@ -33,6 +33,7 @@
     height: 85vh;
     width: 17.5%;
     position: fixed;
+    z-index: 1;
 }
 
 
