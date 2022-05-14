@@ -154,8 +154,8 @@ const alterarVolume = ()=>{
 
 const createList = (imagem, artista, nomeMusica, id)=>{
     const creatElement = document.createElement('tr')
-   const uldocument = document.querySelector('#tableList2')
-   uldocument.appendChild(creatElement)
+   const tddocument = document.querySelector('#tableList2')
+   tddocument.appendChild(creatElement)
     creatElement.innerHTML = `<tr>
     <td>${id}</td>
     <td class="img-flex"> <img src="${imagem}" alt="" class="img-icon" >
@@ -207,9 +207,22 @@ tagAudio.play()
 const removeMenu = () => {
     let menu = document.querySelector('.menu-superior')
     menu.classList.add('invisible')
-    console.log(scroll)
+    
 }
 
+const tempoMusicaLista = () => {
+    for (let i = 0; i < bancoMusicas.length; i++){
+       let musicas = bancoMusicas[i].music
+       let total = tagAudio.src = musicas
+        console.log(total)
+        tagAudio.addEventListener('loadeddata', () => {
+            console.log(segundosParaMinutos(Math.floor(tagAudio.duration)));
+
+        });
+        
+    }
+}
+tempoMusicaLista()
 
 window.addEventListener('scroll', removeMenu)
 tagAudio.addEventListener('timeupdate', atualizaBarra)

@@ -24,15 +24,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    margin-left: 17%;
-    margin-top: -2%;
+    margin-bottom: 10%;
+    
     
     
 }
 .display-central{
-    margin: 0 28%;
-    position:fixed;
+    
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0 45%
     
 }
 
