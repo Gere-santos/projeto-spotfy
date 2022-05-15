@@ -164,12 +164,12 @@ const alterarVolume = () => {
     tagAudio.volume = inputVolume.value
 }
 
-const createList = (imagem, artista, nomeMusica, id, time) => {
+const createList = (imagem, artista, nomeMusica, id, time, indice) => {
     const creatElement = document.createElement('tr')
     const tddocument = document.querySelector('#tableList2')
     tddocument.appendChild(creatElement)
     creatElement.innerHTML = `<tr>
-    <td>${id}</td>
+    <td id='${indice}'>${id}</td>
     <td class="img-flex"> <img src="${imagem}" alt="" class="img-icon" >
     <div class="descrica-artista-list td2"> <p> ${nomeMusica}</p><p>${artista}</p> </div></td>
     <td class="td3">${nomeMusica}</td>
@@ -179,7 +179,7 @@ const createList = (imagem, artista, nomeMusica, id, time) => {
 </tr>`
 }
 const atualizaTela = () => {
-    bancoMusicas.forEach((valor) => createList(valor.imagem, valor.artista, valor.nomeMusica, valor.id, valor.time))
+    bancoMusicas.forEach((valor, indice) => createList(valor.imagem, valor.artista, valor.nomeMusica, valor.id, valor.time, indice))
 }
 atualizaTela()
 

@@ -179,12 +179,15 @@ table {
   }
 
 
+
   .td3{
-      padding-left: 2%;
-      width: 320px;
+      padding-left: 10%;
+      width: 300px;
+      
   }
   .td4{
-    width: 190px
+    width: 400px;
+text-align: center;
   }
   .content-total{
     padding: 0 2.5%;
