@@ -31,7 +31,7 @@
     grid-area: nav;
     background: #000000;
     height: 85vh;
-    width: 17.5%;
+    width: 19%;
     position: fixed;
     z-index: 1;
 }
@@ -190,5 +190,5 @@ table {
 text-align: center;
   }
   .content-total{
-    padding: 0 2.5%;
+    margin-left: 4%;
   }

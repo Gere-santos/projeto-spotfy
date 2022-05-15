@@ -218,8 +218,13 @@ const retornarMusica = (evento) => {
 
 const removeMenu = () => {
     let menu = document.querySelector('.menu-superior')
-    menu.classList.add('invisible')
-
+    const topWindow = window.pageYOffset
+    if (topWindow >= 400) {
+        menu.classList.remove('opacidade')
+    }
+    else if (topWindow < 400) {
+        menu.classList.add('opacidade')
+    }
 }
 
 
