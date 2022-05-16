@@ -92,7 +92,7 @@ let tempoMusica = document.querySelector('.tempo-musica')
 let iconPlayPause = document.querySelector('.fa-play')
 const barra = document.querySelector('#range-player')
 let tempoDecorrido = document.querySelector('.atualiza-barra')
-
+const playPlaylist = document.querySelector('.play-playlist')
 let = guardaNumero = 0;
 
 const loadContent = (guardaNumero = 0) => {
@@ -191,8 +191,9 @@ const atualizaQtDmusica = () => {
 atualizaQtDmusica()
 
 const atualizaBarra = () => {
-
-    barra.value = Math.floor((tagAudio.currentTime / tagAudio.duration) * 100);
+    barra.style.width  = Math.floor((tagAudio.currentTime / tagAudio.duration) * 100) + '%';
+     
+    document.querySelector('.ponto').style.width = Math.floor((tagAudio.currentTime / tagAudio.duration) * 100);
     tempoDecorrido.textContent = segundosParaMinutos(Math.floor(tagAudio.currentTime));
 }
 
@@ -219,16 +220,23 @@ const retornarMusica = (evento) => {
 const removeMenu = () => {
     let menu = document.querySelector('.menu-superior')
     const topWindow = window.pageYOffset
-    if (topWindow >= 400) {
+    if (topWindow >= 450) {
         menu.classList.remove('opacidade')
     }
-    else if (topWindow < 400) {
+    else if (topWindow < 450) {
         menu.classList.add('opacidade')
     }
 }
 
+const musicRandon = (e) => {
+    e.preventDefault()
+    
+    if (tagAudio.currentTime == 0) {
+       
+    }
+}
 
-
+playPlaylist.addEventListener('click', musicRandon)
 window.addEventListener('scroll', removeMenu)
 tagAudio.addEventListener('timeupdate', atualizaBarra)
 retornar.addEventListener('click', retornarMusica)

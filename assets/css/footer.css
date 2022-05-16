@@ -3,8 +3,8 @@
     background: #181818;
     width: 100vw;
     position: fixed;
-    height: 16vh;
-    margin-top: 85vh;
+    height: 12vh;
+    margin-top: 88vh;
     border-top: solid 1px #282828;
    padding-right: 30px;
     
@@ -51,11 +51,7 @@
     margin-bottom: 10px;
     
 }
-#range-player{
-    width: 500px;
-    font-weight: 100;
-    margin: 0 15px;
-}
+
 
 .icone-inferior-esquerdo{
     display: flex;
@@ -95,6 +91,7 @@ p{
     display: flex;
     margin-top: 1%;
     position: fixed;
+   align-items: center;
    
 }
 .prev-btn, .next-btn{
@@ -115,13 +112,40 @@ p{
     appearance: none;
     display: inline-block;
     width: 500px;
-    height: 0.2em;
+    height: 8px;
     margin-top: 7px;
     left: 1em;
     border-radius: 5px;
     background-color: white;
     outline: none;
 }
-#range-player:hover{
+.ponto:hover{
     background: rgb(79, 202, 79);
+}
+#range-player{
+     height: 8px;
+    width: 0;
+    
+}
+.barra {
+    width: 550px;
+    height: 4px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #5E5E5E;
+}
+
+.ponto {
+    width: 5px;
+    height: 4px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: -1px;
+    
+
+}
+.atualiza-barra, .tempo-musica{
+    margin: 0 15px;
 }

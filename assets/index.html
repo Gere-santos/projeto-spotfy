@@ -28,7 +28,10 @@
         </main>
         <div class="content-total ">
             <div class="menu-superior opacidade">
-               <div class="menu-parte1"><a href=""><img src="./icons/play_multimedia_icon_153664.svg" class="play-header" alt=""></a> <h1 class="h1-menu">Músicas Curtidas</h1> </div>
+                <div class="menu-parte1"><a href=""><img src="./icons/play_multimedia_icon_153664.svg"
+                            class="play-header" alt=""></a>
+                    <h1 class="h1-menu">Músicas Curtidas</h1>
+                </div>
                 <div class="lista-menu">
                     <ul>
                         <li>#</li>
@@ -50,7 +53,7 @@
             </div>
             <div class="content-2">
                 <div class="list-music-container-2">
-                    <img src="./icons/play_multimedia_icon_153664.svg" alt="" class="play-list">
+                    <a href="" class="play-playlist"> <img src="./icons/play_multimedia_icon_153664.svg" alt="" class="play-list"> </a>
                     <table class="records" id="tableList">
                         <thead>
                             <tr>
@@ -96,7 +99,11 @@
                     <a href="" id="retornar"> <img src="./icons/ic_replay_128_28743.png" alt=""></a>
                 </div>
                 <div class="player-central">
-                    <p class="atualiza-barra">00:00</p> <input type="range" value="1" id="range-player">
+                    <p class="atualiza-barra">00:00</p>
+                    <div class="barra">
+                        <progress value="0" max="1" id="range-player"></progress>
+                        <div class="ponto"></div>
+                    </div>
                     <p class="tempo-musica"></p>
                 </div>
             </div>
