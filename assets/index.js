@@ -93,6 +93,7 @@ let iconPlayPause = document.querySelector('.fa-play')
 const barra = document.querySelector('#range-player')
 let tempoDecorrido = document.querySelector('.atualiza-barra')
 const playPlaylist = document.querySelector('.play-playlist')
+const btnPlayHeader = document.querySelector('.btn-play-header')
 let = guardaNumero = 0;
 
 const loadContent = (guardaNumero = 0) => {
@@ -208,7 +209,7 @@ const segundosParaMinutos = (segundos) => {
 
     return campoMinutos + ':' + campoSegundos;
 }
-//tagAudio.addEventListener('loadeddata', convertePminuto)
+
 
 
 const retornarMusica = (evento) => {
@@ -230,12 +231,16 @@ const removeMenu = () => {
 
 const musicRandon = (e) => {
     e.preventDefault()
-    
-    if (tagAudio.currentTime == 0) {
-       
-    }
-}
+    playMusic()
+    tagAudio.addEventListener("ended", () => {
+        guardaNumero++
+        loadContent(guardaNumero)
+        tagAudio.play()
+        
+    });
 
+}
+btnPlayHeader.addEventListener('click', musicRandon)
 playPlaylist.addEventListener('click', musicRandon)
 window.addEventListener('scroll', removeMenu)
 tagAudio.addEventListener('timeupdate', atualizaBarra)
