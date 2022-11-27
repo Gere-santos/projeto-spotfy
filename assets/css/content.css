@@ -31,7 +31,7 @@
     grid-area: nav;
     background: #000000;
     height: 85vh;
-    width: 19%;
+   
     position: fixed;
     z-index: 1;
 }

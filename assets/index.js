@@ -88,12 +88,14 @@ const fotoArtista = document.querySelector('#fotoArtista');
 const descricaoArtista = document.querySelector('.descricaoArtista');
 const nomeMusica = document.querySelector('.nomeMusica');
 const inputVolume = document.querySelector('#inputVolume');
-let tempoMusica = document.querySelector('.tempo-musica')
-let iconPlayPause = document.querySelector('.fa-play')
-const barra = document.querySelector('#range-player')
-let tempoDecorrido = document.querySelector('.atualiza-barra')
-const playPlaylist = document.querySelector('.play-playlist')
-const btnPlayHeader = document.querySelector('.btn-play-header')
+let tempoMusica = document.querySelector('.tempo-musica');
+let iconPlayPause = document.querySelector('.fa-play');
+const barra = document.querySelector('#range-player');
+let tempoDecorrido = document.querySelector('.atualiza-barra');
+const playPlaylist = document.querySelector('.play-playlist');
+const btnPlayHeader = document.querySelector('.btn-play-header');
+const btnAleatorio = document.querySelector('#aleatorio');
+
 let = guardaNumero = 0;
 
 const loadContent = (guardaNumero = 0) => {
@@ -240,6 +242,20 @@ const musicRandon = (e) => {
     });
 
 }
+
+const musicAletorioSequencial = (e) => {
+   e.preventDefault();
+    let tamnanhoArray = bancoMusicas.length;
+    let nRandomico = Math.floor(Math.random() * (0 - tamnanhoArray + 1)) + tamnanhoArray;
+    tagAudio.play()
+   tagAudio.addEventListener("ended", () => {
+    loadContent(nRandomico)
+    tagAudio.play()
+    
+});
+}
+
+btnAleatorio.addEventListener('click', musicAletorioSequencial)
 btnPlayHeader.addEventListener('click', musicRandon)
 playPlaylist.addEventListener('click', musicRandon)
 window.addEventListener('scroll', removeMenu)

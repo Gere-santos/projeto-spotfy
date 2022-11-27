@@ -5,6 +5,7 @@
     position: fixed;
   transition: .8s;
 border-bottom: #303030 solid 1px;
+margin-left: 35px;
 
 }
 .opacidade{
@@ -35,7 +36,7 @@ font-family: 'Source Sans Pro', sans-serif;
 }
 .lista-menu, ul, li{
     
-    margin-left: 1.5%;
+    margin-left: 10px;
 }
 .lista-menu ul li:nth-child(2){
     margin-left: 2.5%;
