@@ -247,8 +247,11 @@ const musicAletorioSequencial = (e) => {
    e.preventDefault();
     let tamnanhoArray = bancoMusicas.length;
     let nRandomico = Math.floor(Math.random() * (0 - tamnanhoArray + 1)) + tamnanhoArray;
+    loadContent(nRandomico)
     tagAudio.play()
+    
    tagAudio.addEventListener("ended", () => {
+    let nRandomico = Math.floor(Math.random() * (0 - tamnanhoArray + 1)) + tamnanhoArray;
     loadContent(nRandomico)
     tagAudio.play()
     
